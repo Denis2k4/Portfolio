@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container header-flex">
+      <div class="logo">
+        <img src="images/logo.png" class="logo-img logo-light" alt="Light Logo">
+        <img src="images/logo2.png" class="logo-img logo-dark" alt="Dark Logo">
+    </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#experience">Kinh nghiệm</a>
+        <a href="#contact">Liên hệ</a>
+        <button id="darkmode-toggle" aria-label="Chuyển dark mode"><span>🌙</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="container section">
+    <div class="about-flex">
+      <img src="images/avatar.jpg" alt="Ảnh đại diện" class="avatar"/>
+      <div>
+        <h1>Xin chào, mình là <span class="highlight">Nguyễn Đức Dũng</span> 👋</h1>
+        <h2>Intern Java Developer | Hà Nội</h2>
+        <p>Mình là sinh viên ngành Công nghệ phần mềm tại Học viện Nông nghiệp Việt Nam. Mục tiêu của mình là trở thành lập trình viên backend chuyên nghiệp, xây dựng các hệ thống phần mềm có giá trị thực tiễn.</p>
+        <a href="assets/CV-NguyenDucDung.pdf" download class="btn">
+          <svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 2v11m0 0l-4-4m4 4l4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="15" width="14" height="3" rx="1.5" fill="#fff" stroke="#2c97de" stroke-width="2"/></svg> Tải CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="container section">
+    <h2>Kỹ năng</h2>
+    <div class="skills-list">
+      <div class="skill"><span>Java Core (OOP, Exception, Collection)</span><div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div></div>
+      <div class="skill"><span>Spring Boot (REST API, @RestController, @Service)</span><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></div>
+      <div class="skill"><span>SQL (SELECT, JOIN, INSERT)</span><div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div></div>
+      <div class="skill"><span>HTML/CSS, JavaScript, Bootstrap</span><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></div>
+      <div class="skill"><span>Git, Làm việc nhóm, đọc hiểu tài liệu</span><div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="container section">
+    <h2>Dự án</h2>
+    <div class="projects-list">
+      <div class="project-card">
+        <img src="images/trangchu.png" alt="Demo dự án 1"/>
+        <div class="project-content">
+          <h3>Mobile Phone E-commerce Website</h3>
+          <p>Website bán điện thoại với chức năng đăng nhập, đặt hàng. Sử dụng Spring Boot, ReactJS, JWT, JPA.</p>
+          <div class="project-tags">Java, Spring Boot, ReactJS, MySQL</div>
+          <div class="project-links">
+            <a href="https://github.com/NguyenQuangAnh04/shop-app" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/login.png" alt="Demo dự án 2"/>
+        <div class="project-content">
+          <h3>JavaFX - Kho máy ảnh</h3>
+          <p>Ứng dụng quản lý kho máy ảnh bằng JavaFX, sử dụng Scene Builder và FXML.</p>
+          <div class="project-tags">JavaFX, Java 8, Scene Builder</div>
+          <div class="project-links">
+            <a href="https://github.com/Denis2k4/Javafx-khomayanh" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/trangchu2.png" alt="Demo dự án 3"/>
+        <div class="project-content">
+          <h3>ADNShop - Website bán hàng tĩnh</h3>
+          <p>Website bán hàng giao diện tĩnh, xây dựng với HTML5, CSS3, JS.</p>
+          <div class="project-tags">HTML5, CSS3, JavaScript</div>
+          <div class="project-links">
+            <a href="https://github.com/Denis2k4/ADNSHOP" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="container section">
+  <h2>Kinh nghiệm & Học vấn</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Học viện Nông nghiệp Việt Nam</h3>
+      <span>Công nghệ phần mềm</span>
+      <span class="timeline-date">2022 – 2026</span>
+      <p>Học các môn lập trình Java, C++, SQL, OOP, cấu trúc dữ liệu. Tham gia nhiều đồ án nhóm.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="container section">
+  <h2>Liên hệ</h2>
+  <div class="contact-flex">
+  <div class="contact-info">
+    <h2>Liên hệ</h2>
+    <p><i class="fas fa-envelope icon-contact"></i> 
+      Email: <a href="mailto:dungdube23@gmail.com">dungdube23@gmail.com</a>
+    </p>
+    <p><i class="fas fa-phone icon-contact"></i> 
+      Điện thoại: 0327 599 761
+    </p>
+    <p><i class="fab fa-github icon-contact"></i> 
+      <a href="https://github.com/Denis2k4/" target="_blank">GitHub</a>
+    </p>
+  </div>
+
+  <form id="contact-form">
+    <input type="text" placeholder="Tên của bạn" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Nội dung" required></textarea>
+    <button type="submit" class="btn">Gửi</button>
+  </form>
+</div>
+
+</section>
+
+  <footer>
+    <div class="container">
+      © 2025 Nguyễn Đức Dũng. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
