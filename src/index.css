@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(var(--border)); /* màu viền */
+  --color-background: hsl(var(--background)); /* màu nền */
+  --color-foreground: hsl(var(--foreground)); /* màu chữ */
+
+  --color-primary: hsl(var(--primary)); /* màu chính */
+  --color-primary-foreground: hsl(var(--primary-foreground)); /* màu chữ chính */
+
+  --color-card: hsl(var(--color-card));/* màu thẻ */
+
+  --animate-float: float 6s ease-in-out infinite; /* hiệu ứng nổi */
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite; /* hiệu ứng nhấp nháy nhẹ */
+  --animate-fade-in: fade-in 0.7s ease-out forwards; /* hiệu ứng mờ dần */
+  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards; /* hiệu ứng mờ dần với độ trễ 1 */
+  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards; /* hiệu ứng mờ dần với độ trễ 2 */
+  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards; /* hiệu ứng mờ dần với độ trễ 3 */
+  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.85 forwards; /* hiệu ứng mờ dần với độ trễ 4 */
+  --animate-meteor: meteor 5s linear infinite; /* hiệu ứng sao băng */
+}
+/* hiệu ứng nổi */
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+}
+/* hiệu ứng nhấp nháy nhẹ */
+@keyframes pulse-subtle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+/* hiệu ứng mờ dần */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* hiệu ứng sao băng */
+@keyframes meteor {
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(215deg) translateX(-500px);
+    opacity: 0;
+  }
+}
+
+@layer base {
+  :root {
+
+  }
+
+  .dark{
+    
+  }
+}
